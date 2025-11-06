@@ -1,7 +1,7 @@
 package com.example.entities;
 
 import java.util.List;
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "salles")

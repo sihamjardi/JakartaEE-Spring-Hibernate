@@ -1,33 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.example</groupId>
+    <groupId>ma.example.com</groupId>
     <artifactId>hibernate1</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
-        <!-- Hibernate Core -->
+        <!--  Hibernate Core  -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.9.Final</version>
+            <version>6.5.2.Final</version>
         </dependency>
-        <!-- MySQL Connector -->
+        <!--  MySQL Connector  -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.29</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.4.0</version>
         </dependency>
-        <!-- Jakarta annotations pour PostConstruct -->
+        <!--  JPA API  -->
         <dependency>
-            <groupId>jakarta.annotation</groupId>
-            <artifactId>jakarta.annotation-api</artifactId>
-            <version>2.1.1</version>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
-        <!-- JUnit pour les tests -->
+        <!--  JUnit pour les tests  -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -40,5 +35,4 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>
